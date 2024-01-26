@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="../static/boostrap/css/bootstrap.min.css">
+    <style>
+        body{
+            padding-top: 60px;}
+            .tr-head{background: #dff0d8;}
+    </style>
+    <link rel="stylesheet" href="../static/boostrap/css/bootstrap-responsive.min.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+       <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="">
+                    IDGS-802
+                </a>
+                <ul class="nav">
+                    <li class="active">
+                        <a href="">
+                            <i class="icon-home icon-white"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="icon-user icon-white"></i>
+                            Usuarios
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="icon-user icon-white"></i>
+                            Alumnos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+       </div> 
+       <div class="container">
+        {% block content%}
+        {% endblock %}
+       </div>
+    </div>
+</body>
+</html>
