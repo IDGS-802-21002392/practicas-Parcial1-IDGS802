@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% import "_macro.html" as macros %}
+    <h1>Distancia</h1>
+    <form action="" method="POST">
+        {{ macros.input_Form(form.valor1, class="form-control") }}
+        {{ macros.input_Form(form.valor2, class="form-control") }}
+        {{ macros.input_Form(form.valor3, class="form-control") }}
+        {{ macros.input_Form(form.valor4, class="form-control") }}
+        <input type="submit" name="btn1">
+    </form>
+
+    <h1>Distancia total: {{ distancia }}</h1>
+
+{% endblock %}
