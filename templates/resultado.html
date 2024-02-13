@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% import "_macro.html" as macros %}
+    <h1>Signo Zodiacal</h1>
+
+    <h2>Nombre completo: {{ nombre }} {{ apaterno }} {{ amaterno }}</h2>
+    <h2>tienes {{edad}}</h2>
+    <h2>Signo zodiacal: {{ signos }}</h2>
+    <img src="/static/boostrap/img/{{signo}}.png" />
+
+{% endblock %}
+
+

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% import "_macro.html" as macros %}
+
+<h1>Signo Chino</h1>
+
+<form action="" method="POST">
+    <div class="form-group">
+        {{ macros.input_Form(form.nombre, class="form-control") }}
+        {{ macros.input_Form(form.apaterno, class="form-control") }}
+        {{ macros.input_Form(form.amaterno, class="form-control") }}
+        {{ macros.input_Form(form.dia, class="form-control") }}
+        {{ macros.input_Form(form.mes, class="form-control") }}
+        {{ macros.input_Form(form.anio, class="form-control") }}
+        {{ macros.input_Form(form.sexo, class="form-control") }}
+    </div>
+    <div class="form-group">
+        <input type="submit" name="btn1" value="Calcular">
+        <input type="reset" value="Limpiar">
+    </div>
+</form>
+
+{% endblock %}
+
